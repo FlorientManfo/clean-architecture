@@ -1,0 +1,5 @@
+<resources>
+    <string name="wonder_single_line_text_filed">Single line text field</string>
+    <string name="add_button_label">add</string>
+    <string name="clear_button_label">clear</string>
+</resources>

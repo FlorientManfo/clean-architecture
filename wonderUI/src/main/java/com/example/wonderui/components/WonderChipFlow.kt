@@ -56,9 +56,12 @@ fun <T>WonderChipFlow(
                 verticalArrangement = Arrangement.spacedBy(LocalDimensions.current.small)
             ) {
                 items.forEachIndexed { index, item ->
-                    WonderShip(content = item) {
-                        onRemoveItem(index, item)
-                    }
+                    WonderChip(
+                        content = item,
+                        onRemove = {
+                            onRemoveItem(index, item)
+                        }
+                    )
                 }
             }
             OutlinedButton(

@@ -21,6 +21,8 @@ fun WonderSingleLineTextField(
     value: String,
     onValueChange: (String) -> Unit,
     label: String,
+    modifier: Modifier = Modifier,
+    readOnly: Boolean = false,
     state: TextFieldState = TextFieldState.Normal,
     placeholder: @Composable (() -> Unit)? = null,
     trailing: @Composable (() -> Unit)? = null,
@@ -31,8 +33,9 @@ fun WonderSingleLineTextField(
             value = value,
             onValueChange = onValueChange,
             label = { Text(text = label) },
-            modifier = Modifier.fillMaxWidth(),
+            modifier = modifier.fillMaxWidth(),
             singleLine = true,
+            readOnly = readOnly,
             isError = state is TextFieldState.Error,
             supportingText = {
                 if (state is TextFieldState.Error) {

@@ -18,9 +18,10 @@ import com.example.wonderui.theme.LocalDimensions
 import com.example.wonderui.theme.WonderTheme
 
 @Composable
-fun <T>WonderShip(
+fun <T>WonderChip(
     content: T,
-    onRemove: () -> Unit
+    onRemove: () -> Unit,
+    modifier: Modifier = Modifier
 ){
     WonderTheme {
         Card(
@@ -30,7 +31,7 @@ fun <T>WonderShip(
             Row(
                 horizontalArrangement = Arrangement.spacedBy(LocalDimensions.current.small),
                 verticalAlignment = Alignment.CenterVertically,
-                modifier = Modifier.padding(horizontal = LocalDimensions.current.small)
+                modifier = modifier.padding(horizontal = LocalDimensions.current.small)
             ) {
                 Text(text = content.toString())
                 IconButton(onClick = { onRemove() }) {

@@ -13,14 +13,13 @@ lifecycleRuntimeKtx = "2.6.2"
 activityCompose = "1.8.2"
 composeBom = "2023.10.01"
 appcompat = "1.6.1"
-material = "1.10.0"
 koin = "3.5.0"
 okHttp = "5.0.0-alpha.2"
 retrofit = "2.9.0"
 room = "2.6.1"
 mockk = "1.12.4"
 mockito = "4.0.0"
-uiTestManifest = "1.6.0-beta02"
+uiTestManifest = "1.6.0-beta03"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -47,7 +46,6 @@ tools-build-gradle = { module = "com.android.tools.build:gradle", version.ref = 
 kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 
 koin-core = { group = "io.insert-koin", name = "koin-core", version.ref = "koin" }
 koin-android = { group = "io.insert-koin", name = "koin-android", version.ref = "koin" }

@@ -2,4 +2,11 @@
     <string name="wonder_single_line_text_filed">Single line text field</string>
     <string name="add_button_label">add</string>
     <string name="clear_button_label">clear</string>
+
+    <string name="default_dialog_error_title">Error</string>
+    <string name="default_dialog_error_message">An unexpected error occurred</string>
+    <string name="default_dialog_confirm_title">Confirm</string>
+    <string name="default_dialog_confirm_message">Do you really want to confirm this ?</string>
+    <string name="default_dialog_success_title">Success</string>
+    <string name="default_dialog_success_message">Job success!</string>
 </resources>

@@ -5,6 +5,7 @@ import com.example.domain.di.domainModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
+
 class MainApplication: Application() {
     override fun onCreate() {
         super.onCreate()
@@ -13,5 +14,6 @@ class MainApplication: Application() {
             androidContext(this@MainApplication)
             modules(domainModule)
         }
+
     }
 }

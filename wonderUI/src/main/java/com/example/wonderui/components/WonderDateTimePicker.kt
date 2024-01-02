@@ -14,6 +14,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.platform.LocalContext
+import com.example.wonderui.utils.TextFieldState
 import java.time.LocalDate
 import java.time.LocalDateTime
 import java.time.LocalTime
@@ -23,7 +24,8 @@ import java.time.format.DateTimeFormatter
 @Composable
 fun DateTimePicker(
     label: String,
-    onValueChange: (String) -> Unit
+    onValueChange: (String) -> Unit,
+    state: TextFieldState = TextFieldState.Normal,
 ) {
     val context = LocalContext.current
     val pattern = "yyyy-MM-dd HH:mm"
@@ -72,6 +74,7 @@ fun DateTimePicker(
             currentValue = value
             onValueChange(value)
         },
+        state = state,
         readOnly = true,
         label = label,
         trailing = {

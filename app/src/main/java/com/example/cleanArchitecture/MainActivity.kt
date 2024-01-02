@@ -20,7 +20,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.cleanArchitecture.ui.theme.CleanArchiTheme
-import com.example.domain.utils.NetworkService
+import com.example.domain.services.NetworkService
 import kotlinx.coroutines.flow.collectLatest
 import org.koin.java.KoinJavaComponent.inject
 

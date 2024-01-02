@@ -1,4 +1,4 @@
-package com.example.domain.utils
+package com.example.domain.services
 
 import android.content.Context
 import android.net.ConnectivityManager

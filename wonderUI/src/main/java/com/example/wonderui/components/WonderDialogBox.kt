@@ -26,8 +26,8 @@ import com.example.wonderui.utils.DialogType
 fun WonderDialogBox(
     dialogType: DialogType,
     modifier: Modifier = Modifier,
-    title: @Composable (() -> Unit)? = null,
-    content: @Composable (() -> Unit)? = null,
+    title: @Composable ((modifier: Modifier) -> Unit)? = null,
+    content: @Composable ((modifier: Modifier) -> Unit)? = null,
     onDismiss: (() -> Unit)? = null,
     onConfirm: (() -> Unit)? = null,
     onCancel: (() -> Unit)? = null,
@@ -61,7 +61,7 @@ fun WonderDialogBox(
                                 modifier = contentModifier
                             )
                         } else {
-                            title()
+                            title(contentModifier)
                         }
                         if (content == null) {
                             Text(
@@ -71,7 +71,7 @@ fun WonderDialogBox(
                                 modifier = contentModifier
                             )
                         } else {
-                            content()
+                            content(contentModifier)
                         }
                         Row(
                             modifier = contentModifier,
@@ -109,7 +109,7 @@ fun WonderDialogBox(
                                 modifier = contentModifier
                             )
                         } else {
-                            title()
+                            title(contentModifier)
                         }
                         if (content == null) {
                             Text(
@@ -119,7 +119,7 @@ fun WonderDialogBox(
                                 modifier = contentModifier
                             )
                         } else {
-                            content()
+                            content(contentModifier)
                         }
                         Row(
                             modifier = contentModifier,
@@ -169,7 +169,7 @@ fun WonderDialogBox(
                                 modifier = contentModifier
                             )
                         } else {
-                            title()
+                            title(contentModifier)
                         }
                         if (content == null) {
                             Text(
@@ -179,7 +179,7 @@ fun WonderDialogBox(
                                 modifier = contentModifier
                             )
                         } else {
-                            content()
+                            content(contentModifier)
                         }
                         Row(
                             modifier = contentModifier,

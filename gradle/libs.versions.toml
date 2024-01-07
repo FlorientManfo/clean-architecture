@@ -20,6 +20,8 @@ room = "2.6.1"
 mockk = "1.12.4"
 mockito = "4.0.0"
 uiTestManifest = "1.6.0-beta03"
+lifecycleService = "2.6.2"
+kotlinKsp = "1.9.21-1.0.16"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -44,7 +46,6 @@ androidx-material-icons-extended = { group = "androidx.compose.material", name="
 
 tools-build-gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
 kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
-
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 
 koin-core = { group = "io.insert-koin", name = "koin-core", version.ref = "koin" }
@@ -56,17 +57,19 @@ ok-http-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-
 retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
 moshi-converter = { group = "com.squareup.retrofit2", name = "converter-moshi", version.ref="retrofit" }
 
-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
 room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
 room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+room-testing = { group = "androidx.room", name = "room-testing", version.ref = "room" }
 
 mockk = { group = "io.mockk", name = "mockk", version.ref="mockk" }
 mockito-core = { group = "org.mockito", name = "mockito-core", version.ref = "mockito" }
 mockito-inline = { group = "org.mockito", name = "mockito-inline", version.ref = "mockito" }
 mockito-kotlin = { group = "org.mockito.kotlin", name = "mockito-kotlin", version.ref="mockito" }
+androidx-lifecycle-service = { group = "androidx.lifecycle", name = "lifecycle-service", version.ref = "lifecycleService" }
 
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "kotlinKsp"}

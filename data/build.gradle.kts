@@ -1,5 +1,6 @@
 plugins {
     id(libs.plugins.androidLibrary.get().pluginId)
+    alias(libs.plugins.ksp)
 }
 apply<LibraryGradlePlugin>()
 
@@ -16,4 +17,8 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    implementation(libs.room.ktx)
+    ksp(libs.room.compiler)
+    androidTestImplementation(libs.room.testing)
 }

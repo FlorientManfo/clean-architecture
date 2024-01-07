@@ -24,6 +24,5 @@ class LibraryGradlePlugin: Plugin<Project> {
 internal fun applyCommonPlugins(project: Project) {
     project.apply {
         plugin("kotlin-android")
-        plugin("kotlin-kapt")
     }
 }

@@ -76,4 +76,3 @@ jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "k
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "kotlinKsp"}
 maven = { id = "maven-publish" }
-java = { id = "java-library" }

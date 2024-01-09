@@ -19,6 +19,7 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     implementation(libs.room.ktx)
+    implementation(libs.gson.converter)
     ksp(libs.room.compiler)
     androidTestImplementation(libs.room.testing)
 

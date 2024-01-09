@@ -22,6 +22,7 @@ mockito = "4.0.0"
 uiTestManifest = "1.6.0-beta03"
 lifecycleService = "2.6.2"
 kotlinKsp = "1.9.21-1.0.16"
+gson = "2.10.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -60,6 +61,7 @@ moshi-converter = { group = "com.squareup.retrofit2", name = "converter-moshi", 
 room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
 room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
 room-testing = { group = "androidx.room", name = "room-testing", version.ref = "room" }
+gson-converter = {group = "com.google.code.gson", name = "gson", version.ref= "gson" }
 
 mockk = { group = "io.mockk", name = "mockk", version.ref="mockk" }
 mockito-core = { group = "org.mockito", name = "mockito-core", version.ref = "mockito" }

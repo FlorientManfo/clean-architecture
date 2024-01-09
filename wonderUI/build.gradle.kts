@@ -1,10 +1,19 @@
+import org.gradle.kotlin.dsl.publishing
+
 plugins {
     id(libs.plugins.androidLibrary.get().pluginId)
+    id(libs.plugins.maven.get().pluginId)
 }
 apply<LibraryGradlePlugin>()
 
 android {
-    namespace = "com.example.wonderUI"
+    namespace = "com.wonder.wonderUI"
+}
+
+publishing {
+    publications {
+        
+    }
 }
 
 dependencies {

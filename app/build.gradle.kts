@@ -4,7 +4,7 @@ plugins {
 apply<ApplicationGradlePlugin>()
 
 android {
-    namespace = "com.example.cleanArchitecture"
+    namespace = "com.wonder.cleanArchitecture"
     buildTypes {
         release {
             isMinifyEnabled = true

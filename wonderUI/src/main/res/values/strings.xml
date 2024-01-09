@@ -9,4 +9,12 @@
     <string name="default_dialog_confirm_message">Do you really want to confirm this ?</string>
     <string name="default_dialog_success_title">Success</string>
     <string name="default_dialog_success_message">Job success!</string>
+
+    <string name="wonder_chip_review_content">Wonder chip</string>
+
+    <string name="chip_flow_preview_title">Chip flow</string>
+
+    <string name="datetime_picker_preview_label">Date picker</string>
+
+    <string name="text_field_error_message_preview">Error</string>
 </resources>

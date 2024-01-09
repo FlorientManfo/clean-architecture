@@ -5,7 +5,7 @@ plugins {
 apply<LibraryGradlePlugin>()
 
 android {
-    namespace = "com.example.data"
+    namespace = "com.wonder.data"
 }
 
 dependencies {

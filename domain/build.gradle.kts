@@ -4,7 +4,7 @@ plugins {
 apply<LibraryGradlePlugin>()
 
 android {
-    namespace = "com.example.domain"
+    namespace = "com.wonder.domain"
 }
 
 dependencies {

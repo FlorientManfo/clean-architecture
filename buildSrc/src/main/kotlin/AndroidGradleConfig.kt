@@ -17,7 +17,7 @@ internal fun Project.configureAndroidWithCompose(moduleType: ModuleType) {
             project.extensions.getByType(ApplicationExtension::class.java).apply {
                 compileSdk = COMPILE_SDK_VERSION
                 defaultConfig {
-                    applicationId = "com.example.cleanArchitecture"
+                    applicationId = "com.wonder"
                     minSdk = MIN_SDK_VERSION
                     targetSdk = TARGET_SDK_VERSION
                     versionCode = VERSION_CODE
